@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integrations | Chatbot Automation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/integrations.css">
+  <link rel="stylesheet" href="css/ads.css">
+</head>
+<body>
+  <header class="integrations-header">
+    <div class="header-content">
+      <h1>Chatbot Automation</h1>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="flow-builder.html">Flow Builder</a>
+        <a href="#" class="active">Integrations</a>
+        <button id="logout-btn">Logout</button>
+      </nav>
+    </div>
+    <div id="header-ad" class="header-ad"></div>
+  </header>
+  
+  <div class="integrations-container">
+    <aside class="integrations-sidebar">
+      <div class="sidebar-section">
+        <h3>Connected Accounts</h3>
+        <ul id="connected-accounts-list">
+          <!-- Dynamically populated -->
+        </ul>
+      </div>
+      
+      <div id="sidebar-ad" class="sidebar-ad"></div>
+    </aside>
+    
+    <main class="integrations-main">
+      <h2>Social Media Integrations</h2>
+      <p>Connect your social media accounts to enable chatbot automation</p>
+      
+      <div class="integration-cards">
+        <div class="integration-card" id="facebook-card">
+          <img src="https://via.placeholder.com/100?text=FB" alt="Facebook">
+          <h3>Facebook</h3>
+          <p>Connect your Facebook Page to automate Messenger conversations</p>
+          <button class="btn-primary" id="connect-facebook">Connect</button>
+          <div class="connection-status" id="facebook-status">Not connected</div>
+        </div>
+        
+        <div class="integration-card" id="instagram-card">
+          <img src="https://via.placeholder.com/100?text=IG" alt="Instagram">
+          <h3>Instagram</h3>
+          <p>Connect your Instagram account to automate Direct Messages</p>
+          <button class="btn-primary" id="connect-instagram">Connect</button>
+          <div class="connection-status" id="instagram-status">Not connected</div>
+        </div>
+        
+        <div class="integration-card" id="whatsapp-card">
+          <img src="https://via.placeholder.com/100?text=WA" alt="WhatsApp">
+          <h3>WhatsApp</h3>
+          <p>Connect your WhatsApp Business account</p>
+          <button class="btn-primary" id="connect-whatsapp">Connect</button>
+          <div class="connection-status" id="whatsapp-status">Not connected</div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <footer class="integrations-footer">
+    <div id="footer-ad" class="footer-ad"></div>
+    <div class="footer-content">
+      <p>© 2023 Chatbot Automation Platform. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/firebase-config.js"></script>
+  <script src="js/integrations.js"></script>
+  <script src="js/ad-manager.js"></script>
+</body>
+</html>
