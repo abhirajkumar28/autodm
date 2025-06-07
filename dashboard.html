@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Chatbot Automation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/ads.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <div class="header-content">
+      <h1>Chatbot Automation</h1>
+      <nav>
+        <a href="#" class="active">Dashboard</a>
+        <a href="flow-builder.html">Flow Builder</a>
+        <a href="integrations.html">Integrations</a>
+        <button id="logout-btn">Logout</button>
+      </nav>
+    </div>
+    <div id="header-ad" class="header-ad"></div>
+  </header>
+  
+  <div class="dashboard-container">
+    <aside class="dashboard-sidebar">
+      <div class="sidebar-section">
+        <h3>Quick Actions</h3>
+        <ul>
+          <li><a href="flow-builder.html"><span>➕</span> New Flow</a></li>
+          <li><a href="integrations.html"><span>🔗</span> Add Integration</a></li>
+          <li><a href="#"><span>📊</span> Analytics</a></li>
+        </ul>
+      </div>
+      
+      <div class="sidebar-section">
+        <h3>Recent Flows</h3>
+        <ul id="recent-flows-list">
+          <!-- Dynamically populated -->
+        </ul>
+      </div>
+      
+      <div id="sidebar-ad" class="sidebar-ad"></div>
+    </aside>
+    
+    <main class="dashboard-main">
+      <div class="welcome-banner">
+        <h2>Welcome Back!</h2>
+        <p>Manage your chatbot workflows and analytics from your dashboard.</p>
+      </div>
+      
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-icon">🤖</div>
+          <h3>Active Bots</h3>
+          <p id="active-bots">0</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🔗</div>
+          <h3>Connected Accounts</h3>
+          <p id="connected-accounts">0</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">✉️</div>
+          <h3>Total Messages</h3>
+          <p id="total-messages">0</p>
+        </div>
+      </div>
+      
+      <div class="recent-flows">
+        <div class="section-header">
+          <h2>Your Recent Flows</h2>
+          <a href="flow-builder.html" class="btn-primary">Create New Flow</a>
+        </div>
+        <div class="flows-grid" id="flows-grid">
+          <!-- Flows will be loaded here -->
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <footer class="dashboard-footer">
+    <div id="footer-ad" class="footer-ad"></div>
+    <div class="footer-content">
+      <p>© 2023 Chatbot Automation Platform. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/firebase-config.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/ad-manager.js"></script>
+</body>
+</html>
