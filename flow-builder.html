@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flow Builder | Chatbot Automation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/builder.css">
+  <link rel="stylesheet" href="css/ads.css">
+</head>
+<body>
+  <header class="builder-header">
+    <div class="header-content">
+      <h1>Flow Builder</h1>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#" class="active">Flow Builder</a>
+        <a href="integrations.html">Integrations</a>
+        <button id="logout-btn">Logout</button>
+      </nav>
+    </div>
+    <div id="header-ad" class="header-ad"></div>
+  </header>
+  
+  <div class="builder-container">
+    <aside class="builder-sidebar">
+      <div class="flow-info">
+        <input type="text" id="flow-name" placeholder="Flow Name" required>
+        <textarea id="flow-description" placeholder="Flow Description"></textarea>
+      </div>
+      
+      <div class="elements-panel">
+        <h3>Message Elements</h3>
+        <div class="element" draggable="true" data-type="text">
+          <span>📝</span> Text Message
+        </div>
+        <div class="element" draggable="true" data-type="image">
+          <span>🖼️</span> Image
+        </div>
+        <div class="element" draggable="true" data-type="quick-reply">
+          <span>🔘</span> Quick Reply
+        </div>
+        <div class="element" draggable="true" data-type="delay">
+          <span>⏱️</span> Delay
+        </div>
+      </div>
+      
+      <div class="triggers-panel">
+        <h3>Triggers</h3>
+        <div class="trigger" draggable="true" data-type="keyword">
+          <span>🔑</span> Keyword
+        </div>
+        <div class="trigger" draggable="true" data-type="new-chat">
+          <span>💬</span> New Chat
+        </div>
+        <div class="trigger" draggable="true" data-type="button-click">
+          <span>🖱️</span> Button Click
+        </div>
+      </div>
+      
+      <div id="sidebar-ad" class="sidebar-ad"></div>
+    </aside>
+    
+    <main class="builder-canvas">
+      <div class="trigger-area" id="trigger-area">
+        <p>Drag a trigger here to start your flow</p>
+      </div>
+      <div class="steps-container" id="steps-container">
+        <!-- Steps will be added here -->
+      </div>
+      <div class="builder-actions">
+        <button id="save-flow" class="btn-primary">Save Flow</button>
+        <button id="test-flow" class="btn-secondary">Test Flow</button>
+        <button id="delete-flow" class="btn-danger">Delete</button>
+      </div>
+    </main>
+    
+    <aside class="properties-panel">
+      <h3>Properties</h3>
+      <div id="properties-content">
+        <p>Select an element to edit its properties</p>
+      </div>
+    </aside>
+  </div>
+  
+  <footer class="builder-footer">
+    <div id="footer-ad" class="footer-ad"></div>
+    <div class="footer-content">
+      <p>© 2023 Chatbot Automation Platform. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="js/firebase-config.js"></script>
+  <script src="js/builder.js"></script>
+  <script src="js/ad-manager.js"></script>
+</body>
+</html>
