@@ -1,11 +1,11 @@
 // Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBi05pN0jrYC5iOJCR87yonOylpbAtlDlE",
-  authDomain: "",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  authDomain: "auto-dm-cff03.firebaseapp.com",
+  projectId: "auto-dm-cff03",
+  storageBucket: "auto-dm-cff03.firebasestorage.app",
+  messagingSenderId: "151875777601",
+  appId: "151875777601"
 };
 
 // Initialize Firebase
