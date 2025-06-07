@@ -1,0 +1,66 @@
+/* Ad Styles */
+.ad-container {
+  position: relative;
+  margin: 1rem 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.2s ease;
+}
+
+.ad-container:hover {
+  transform: translateY(-2px);
+}
+
+.ad-link {
+  display: block;
+}
+
+.ad-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ad-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-bottom-left-radius: var(--border-radius);
+}
+
+/* Specific ad types */
+.ad-container.banner {
+  max-width: 728px;
+  margin: 1rem auto;
+}
+
+.ad-container.rectangle {
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+/* Responsive ads */
+@media (max-width: 768px) {
+  .ad-container.banner {
+    max-width: 468px;
+  }
+  
+  .ad-container.rectangle {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ad-container.banner {
+    max-width: 320px;
+  }
+  
+  #sidebar-ad {
+    display: none;
+  }
+}
