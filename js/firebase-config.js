@@ -5,7 +5,8 @@ const firebaseConfig = {
   projectId: "auto-dm-cff03",
   storageBucket: "auto-dm-cff03.firebasestorage.app",
   messagingSenderId: "151875777601",
-  appId: "151875777601"
+  appId: "1:151875777601:web:911d54c808946053e202c0"
+  measurementld:G-N7BV8YQZTQ"
 };
 
 // Initialize Firebase
